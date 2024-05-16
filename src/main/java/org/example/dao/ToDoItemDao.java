@@ -16,6 +16,20 @@ public interface ToDoItemDao {
     ToDoItem create(ToDoItem toDoItem);
 
     /**
+     * Update an existing ToDoItem.
+     * @param toDoItem the to-do item to update.
+     * @return the update to-do item.
+     */
+    ToDoItem updateTodoItem(ToDoItem toDoItem);
+
+    /**
+     * Delete a ToDoItem by its ID.
+     * @param id the ID to-do item.
+     * @return ture if the to-do item as delete, false otherwise.
+     */
+    boolean deleteById(int id);
+
+    /**
      * Find all ToDoItem.
      * @return a collection all to-do items.
      */
@@ -54,19 +68,5 @@ public interface ToDoItemDao {
      * @return a collection of unassigned to-do items.
      */
     Collection<ToDoItem> findByUnassignedTodoItem();
-
-    /**
-     * Update an existing ToDoItem.
-     * @param toDoItem the to-do item to update.
-     * @return the update to-do item.
-     */
-    ToDoItem updateTodoItem(ToDoItem toDoItem);
-
-    /**
-     * Delete a ToDoItem by its ID.
-     * @param id the ID to-do item.
-     * @return ture if the to-do item as delete, false otherwise.
-     */
-    boolean deleteById(int id);
 
 }

@@ -11,7 +11,20 @@ public class ToDoItemImpl implements ToDoItemDao {
 
     @Override
     public ToDoItem create(ToDoItem toDoItem) {
+        // todo:
         return null;
+    }
+
+    @Override
+    public ToDoItem updateTodoItem(ToDoItem toDoItem) {
+        // todo:
+        return null;
+    }
+
+    @Override
+    public boolean deleteById(int id) {
+        // todo:
+        return false;
     }
 
     @Override
@@ -44,13 +57,4 @@ public class ToDoItemImpl implements ToDoItemDao {
         return null;
     }
 
-    @Override
-    public ToDoItem updateTodoItem(ToDoItem toDoItem) {
-        return null;
-    }
-
-    @Override
-    public boolean deleteById(int id) {
-        return false;
-    }
 }

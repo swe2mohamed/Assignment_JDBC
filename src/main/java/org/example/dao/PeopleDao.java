@@ -15,6 +15,20 @@ public interface PeopleDao {
     People createPerson(People person);
 
     /**
+     * Update an exiting Person.
+     * @param person the person to update.
+     * @return the update person.
+     */
+    People updatePerson(People person);
+
+    /**
+     * Delete a Person by ID.
+     * @param id the ID of the person.
+     * @return true if the person was deleted , false otherwise.
+     */
+    boolean deletePerson(int id);
+
+    /**
      * Find all people.
      * @return a collection of all people.
      */
@@ -35,17 +49,4 @@ public interface PeopleDao {
      */
     Optional<People> findByName(String firstName, String lastName);
 
-    /**
-     * Update an exiting Person.
-     * @param person the person to update.
-     * @return the update person.
-     */
-    People updatePerson(People person);
-
-    /**
-     * Delete a Person by ID.
-     * @param id the ID of the person.
-     * @return true if the person was deleted , false otherwise.
-     */
-    boolean deletePerson(int id);
 }
