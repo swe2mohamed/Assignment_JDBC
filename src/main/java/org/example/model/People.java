@@ -10,20 +10,18 @@ public class People {
 
     // User
 
-    public People(String firstName, String lastName, List<ToDoItem> toDoItems) {
+    public People(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.toDoItems = toDoItems;
     }
 
 
     // Database
 
-    public People(int id, String firstName, String lastName, List<ToDoItem> toDoItems) {
+    public People(int id, String firstName, String lastName) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.toDoItems = toDoItems;
     }
 
     public int getId() {
@@ -50,5 +48,11 @@ public class People {
                 ", lastName='" + lastName + '\'' +
                 ", toDoItems=" + toDoItems +
                 '}';
+    }
+
+    // Create help method
+    public int findById(int id){
+        // todo
+        return 0;
     }
 }

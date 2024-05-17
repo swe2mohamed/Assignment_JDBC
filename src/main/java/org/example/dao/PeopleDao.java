@@ -43,10 +43,10 @@ public interface PeopleDao {
 
     /**
      * Find a person by first and last name.
-     * @param firstName the first name of the person.
-     * @param lastName the last name of the person.
+     * @param first_name the first name of the person.
+     * @param last_name the last name of the person.
      * @return an Optional containing the found person, or empty if not found.
      */
-    Optional<People> findByName(String firstName, String lastName);
+    Optional<People> findByName(String first_name, String last_name);
 
 }

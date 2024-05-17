@@ -14,10 +14,12 @@ public class DatabaseConnector {
     private static final String JDBC_PASSWORD = "password";
 
     public static Connection getConnection() {
+        Connection connection = null;
         try {
-            return DriverManager.getConnection(JDBC_URL, JDBC_USERNAME, JDBC_PASSWORD);
+            connection =  DriverManager.getConnection(JDBC_URL, JDBC_USERNAME, JDBC_PASSWORD);
         }catch (SQLException e){
             throw new DBConnectionException("Failed to connect to DB(" + DB_NAME + ")");
         }
+        return connection;
     }
 }
